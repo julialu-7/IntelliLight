@@ -75,7 +75,7 @@ for model_name in list_model_name:
         if "real" in traffic_file[0]:
             dic_exp["RUN_COUNTS"] = 86400
         elif "2phase" in traffic_file[0]:
-            dic_exp["RUN_COUNTS"] = 72000
+            dic_exp["RUN_COUNTS"] = 7200
         elif "synthetic" in traffic_file[0]:
             dic_exp["RUN_COUNTS"] = 216000
         json.dump(dic_exp, open(os.path.join(PATH_TO_CONF, "exp.conf"), "w"), indent=4)

@@ -34,12 +34,16 @@ import random
 random.seed(SEED)
 import numpy as np
 np.random.seed(SEED)
-from tensorflow import set_random_seed
-set_random_seed((SEED))
+#from tensorflow import set_random_seed
+#set_random_seed((SEED))
+import tensorflow as tf
+tf.random.set_seed(SEED)
 import json
 import os
 import traffic_light_dqn
 import time
+
+
 
 PATH_TO_CONF = os.path.join("conf", setting_memo)
 

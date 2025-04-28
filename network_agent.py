@@ -16,7 +16,8 @@ from keras.layers.core import Dropout
 from keras.layers.pooling import MaxPooling2D
 from keras import backend as K
 import random
-from keras.engine.topology import Layer
+# from keras.engine.topology import Layer
+from keras.layers import Layer
 import os
 
 from agent import Agent, State

@@ -1,27 +1,37 @@
 <routes>
 
+    <!-- Config 4 with left turns 7200 simulation time-->
+    <flow id="01" type="Car" begin="0" end="3600" number="1440" from="edge1-0" to="edge0-2" departPos="1" departLane="best" departSpeed="5.0"/>
+    <flow id="02" type="Car" begin="0" end="3600" number="1440" from="edge2-0" to="edge0-1" departPos="2" departLane="best" departSpeed="5.0"/>
+    <flow id="03" type="Car" begin="3600" end="7200" number="1440" from="edge3-0" to="edge0-4" departPos="3" departLane="best" departSpeed="5.0"/>
+    <flow id="04" type="Car" begin="3600" end="7200" number="1440" from="edge4-0" to="edge0-3" departPos="4" departLane="best" departSpeed="5.0"/>
 
-    <flow id="01" type="Car" begin="0" end="36000" number="14400" from="edge1-0" to="edge0-2" departPos="1" departLane="best" departSpeed="5.0"/>
-    <flow id="02" type="Car" begin="0" end="36000" number="14400" from="edge2-0" to="edge0-1" departPos="2" departLane="best" departSpeed="5.0"/>
-    <flow id="03" type="Car" begin="36000" end="72000" number="14400" from="edge3-0" to="edge0-4" departPos="3" departLane="best" departSpeed="5.0"/>
-    <flow id="04" type="Car" begin="36000" end="72000" number="14400" from="edge4-0" to="edge0-3" departPos="4" departLane="best" departSpeed="5.0"/>
+    <flow id="11" type="Car" begin="7200" end="14400" number="190" from="edge1-0" to="edge0-2" departPos="1" departLane="best" departSpeed="5.0"/> 
+    <flow id="12" type="Car" begin="7200" end="14400" number="48" from="edge1-0" to="edge0-4" departPos="1" departLane="best" departSpeed="5.0"/> 
+    <flow id="13" type="Car" begin="7200" end="14400" number="190" from="edge2-0" to="edge0-1" departPos="2" departLane="best" departSpeed="5.0"/>
+    <flow id="14" type="Car" begin="7200" end="14400" number="48" from="edge2-0" to="edge0-3" departPos="2" departLane="best" departSpeed="5.0"/> 
+    <flow id="15" type="Car" begin="7200" end="14400" number="190" from="edge3-0" to="edge0-4" departPos="3" departLane="best" departSpeed="5.0"/> 
+    <flow id="16" type="Car" begin="7200" end="14400" number="48" from="edge3-0" to="edge0-1" departPos="3" departLane="best" departSpeed="5.0"/> 
+    <flow id="17" type="Car" begin="7200" end="14400" number="190" from="edge4-0" to="edge0-3" departPos="4" departLane="best" departSpeed="5.0"/>
+    <flow id="18" type="Car" begin="7200" end="14400" number="48" from="edge4-0" to="edge0-2" departPos="4" departLane="best" departSpeed="5.0"/> 
 
+    <flow id="21" type="Car" begin="14400" end="21600" number="1152" from="edge1-0" to="edge0-2" departPos="1" departLane="best" departSpeed="5.0"/> 
+    <flow id="22" type="Car" begin="14400" end="21600" number="288" from="edge1-0" to="edge0-4" departPos="1" departLane="best" departSpeed="5.0"/> 
+    <flow id="23" type="Car" begin="14400" end="21600" number="1152" from="edge2-0" to="edge0-1" departPos="2" departLane="best" departSpeed="5.0"/> 
+    <flow id="24" type="Car" begin="14400" end="21600" number="288" from="edge2-0" to="edge0-3" departPos="2" departLane="best" departSpeed="5.0"/> 
+    <flow id="25" type="Car" begin="14400" end="21600" number="190" from="edge3-0" to="edge0-4" departPos="3" departLane="best" departSpeed="5.0"/> 
+    <flow id="26" type="Car" begin="14400" end="21600" number="48" from="edge3-0" to="edge0-1" departPos="3" departLane="best" departSpeed="5.0"/> 
+    <flow id="27" type="Car" begin="14400" end="21600" number="190" from="edge4-0" to="edge0-3" departPos="4" departLane="best" departSpeed="5.0"/> 
+    <flow id="28" type="Car" begin="14400" end="21600" number="48" from="edge4-0" to="edge0-2" departPos="4" departLane="best" departSpeed="5.0"/> 
 
-    <flow id="11" type="Car" begin="72000" end="144000" number="2400" from="edge1-0" to="edge0-2" departPos="1" departLane="best" departSpeed="5.0"/>
-    <flow id="12" type="Car" begin="72000" end="144000" number="2400" from="edge2-0" to="edge0-1" departPos="2" departLane="best" departSpeed="5.0"/>
-    <flow id="13" type="Car" begin="72000" end="144000" number="2400" from="edge3-0" to="edge0-4" departPos="3" departLane="best" departSpeed="5.0"/>
-    <flow id="14" type="Car" begin="72000" end="144000" number="2400" from="edge4-0" to="edge0-3" departPos="4" departLane="best" departSpeed="5.0"/>
-
-
-    <flow id="21" type="Car" begin="144000" end="216000" number="14400" from="edge1-0" to="edge0-2" departPos="1" departLane="best" departSpeed="5.0"/>
-    <flow id="22" type="Car" begin="144000" end="216000" number="14400" from="edge2-0" to="edge0-1" departPos="2" departLane="best" departSpeed="5.0"/>
-    <flow id="23" type="Car" begin="144000" end="216000" number="2400" from="edge3-0" to="edge0-4" departPos="3" departLane="best" departSpeed="5.0"/>
-    <flow id="24" type="Car" begin="144000" end="216000" number="2400" from="edge4-0" to="edge0-3" departPos="4" departLane="best" departSpeed="5.0"/>
-
-    <flow id="31" type="Car" begin="216000" end="288000" number="14400" from="edge1-0" to="edge0-2" departPos="1" departLane="best" departSpeed="5.0"/>
-    <flow id="32" type="Car" begin="216000" end="288000" number="14400" from="edge2-0" to="edge0-1" departPos="2" departLane="best" departSpeed="5.0"/>
-    <flow id="33" type="Car" begin="216000" end="288000" number="14400" from="edge3-0" to="edge0-4" departPos="3" departLane="best" departSpeed="5.0"/>
-    <flow id="34" type="Car" begin="216000" end="288000" number="14400" from="edge4-0" to="edge0-3" departPos="4" departLane="best" departSpeed="5.0"/>
+    <!-- <flow id="31" type="Car" begin="21600" end="28800" number="2304" from="edge1-0" to="edge0-2" departPos="1" departLane="best" departSpeed="5.0"/> 
+    <flow id="32" type="Car" begin="21600" end="28800" number="576" from="edge1-0" to="edge0-4" departPos="1" departLane="best" departSpeed="5.0"/> 
+    <flow id="33" type="Car" begin="21600" end="28800" number="2304" from="edge2-0" to="edge0-1" departPos="2" departLane="best" departSpeed="5.0"/> 
+    <flow id="34" type="Car" begin="21600" end="28800" number="576" from="edge2-0" to="edge0-3" departPos="2" departLane="best" departSpeed="5.0"/> 
+    <flow id="35" type="Car" begin="21600" end="28800" number="2304" from="edge3-0" to="edge0-4" departPos="3" departLane="best" departSpeed="5.0"/> 
+    <flow id="36" type="Car" begin="21600" end="28800" number="576" from="edge3-0" to="edge0-1" departPos="3" departLane="best" departSpeed="5.0"/> 
+    <flow id="37" type="Car" begin="21600" end="28800" number="2304" from="edge4-0" to="edge0-3" departPos="4" departLane="best" departSpeed="5.0"/> 
+    <flow id="38" type="Car" begin="21600" end="28800" number="576" from="edge4-0" to="edge0-2" departPos="4" departLane="best" departSpeed="5.0"/>  -->
 
 
 </routes>

@@ -232,6 +232,15 @@ class TrafficLightDQN:
             self.agent.update_network(if_pretrain, use_average, current_time)
             self.agent.update_network_bar()
         self.agent.reset_update_count()
+
+        try:
+            import traci
+            if traci.isLoaded():
+                traci.close()
+        except Exception as e:
+            print("Error closing TraCI:", e)
+
+
         print("END")
 
 
